@@ -1,0 +1,23 @@
+server :
+  port : 8071
+spring :
+  application :
+    name : config-server
+  profiles:
+    active: git
+  cloud :
+    config :
+      server :
+        git :
+          uri : https://github.com/kimujae/config.git
+          searchPaths : servicegateway, servicediscovery
+
+management :
+  endpoints :
+    web :
+      exposure :
+        include :
+          health, info
+  endpoint :
+    health :
+      show-details : always
