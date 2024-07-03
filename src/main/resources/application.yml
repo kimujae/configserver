@@ -10,7 +10,7 @@ spring :
       server :
         git :
           uri : https://github.com/kimujae/config.git
-          searchPaths : servicegateway, servicediscovery
+          searchPaths : servicegateway, servicediscovery, productservice
 
 management :
   endpoints :
