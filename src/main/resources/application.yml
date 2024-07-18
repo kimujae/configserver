@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/HS-Continuity/ConfigRepository
+          uri: https://github.com/kimujae/config
           searchPaths: servicegateway, servicediscovery, productservice, memberservice
 
 management:
